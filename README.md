@@ -33,9 +33,9 @@ Operation check with Apache-Tomcat v9.0, Run As Server.
 downlaod https://struts.apache.org/ https://dev.mysql.com/downloads/ https://logging.apache.org/log4j/2.x/
 
 ### Database Schema
-DataBase Name : struts2
+DataBase Name : struts2sample
 ```
-CREATE TABLE `struts2db` (
+CREATE TABLE `struts2users` (
   `ID` INT(5) DEFAULT NULL,
   `NAME` VARCHAR(20) DEFAULT NULL,
   `EMAIL` VARCHAR(50) DEFAULT NULL,
