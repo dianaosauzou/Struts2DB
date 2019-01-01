@@ -9,13 +9,14 @@ public class Admin {
 	
 	public static Connection conn() throws Exception {
 		Class.forName("com.mysql.jdbc.Driver");
-		return DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/struts2", "root", "");
+		//return DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/struts2sample", "root", "");
+		return DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/struts2sample?autoReconnect=true&useSSL=false", "root", "");
 	}
 
 	public static int register(RegisterAction ra) {
 		int flag = 0;
 		try {
-			PreparedStatement ps = conn().prepareStatement("INSERT INTO STRUTS2DB VALUES(?,?,?,?)");
+			PreparedStatement ps = conn().prepareStatement("INSERT INTO struts2users VALUES(?,?,?,?)");
 			ps.setInt(1, ra.getId());
 			ps.setString(2, ra.getName());
 			ps.setString(3, ra.getEmail());
