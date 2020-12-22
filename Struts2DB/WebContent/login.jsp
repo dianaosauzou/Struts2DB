@@ -9,15 +9,12 @@
 </head>
 <body style="background-color: lightyellow;">
 	<div style="margin-left: 25%; margin-top: 50px;">
-		<h1>Struts2 and MySQL database connectivity example</h1>
+		<h1>Struts2 and MySQL database  example</h1>
+		 <s:form action="Login">
 		
-		 <s:form action="Register">
-			<s:textfield label="username" name="username" />
+			<s:textfield label="userame" name="username" />
 			<s:textfield label="password" name="password" />
-			<s:textfield label="email" name="email" />
-			<s:textfield label="age" name="age" />
-			<s:submit value="Register" />
-	
+			<s:submit value="Login" />
 		</s:form>
 </div>
 </body>

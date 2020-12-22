@@ -1,9 +1,11 @@
 package com.action;
-import com.admin.Admin;
+import java.util.ArrayList;
 
+import com.admin.Admin;
 public class RegisterAction {
-	int id;
-	String name, email, city;
+	int age;
+	String username, password, email;
+	
 	
 	public String execute() throws Exception {
 
@@ -14,21 +16,22 @@ public class RegisterAction {
 			return "input";
 		}
 	}
+
 	
-	public int getId() {
-		return id;
+	public int getAge() {
+		return age;
 	}
 	
-	public void setId(int id) {
-		this.id = id;
+	public void setAge(int age) {
+		this.age = age;
 	}
 	
-	public String getName() {
-		return name;
+	public String getUsername() {
+		return username;
 	}
 	
-	public void setName(String name) {
-		this.name = name;
+	public void setUsername(String username) {
+		this.username = username;
 	}
 	
 	public String getEmail() {
@@ -38,13 +41,15 @@ public class RegisterAction {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	
-	public String getCity() {
-		return city;
+	public String getPassword() {
+		return password;
 	}
 	
-	public void setCity(String city) {
-		this.city = city;
+	public void setPassword(String password) {
+		this.password = password;
 	}
+
+
+
 	
 }
